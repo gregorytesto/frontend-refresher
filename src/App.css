@@ -40,16 +40,19 @@
 /* Home --------------------------------*/
 
 #main-content {
+  /* border: 1px solid red; */
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
   padding: 30px;
   display: grid;
   grid-template-areas: 
   "popular overview"
   "newsletter newsletter"
   ;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
-  row-gap: 30px;
-  justify-items: center;
+  gap: 30px;
 }
 
 #hero-image {
@@ -57,7 +60,7 @@
   background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701223614.jpg") no-repeat center;
   height: 500px;
   background-size: cover;
-  opacity: .6;
+  /* opacity: .6; */
 }
 
 #hero-text {
@@ -67,29 +70,32 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: ghostwhite;
-  font-size: 50px;
+  font-size: 75px;
 }
 
 #popular-scroll { 
-  /* margin-left: 75px; */
   border: 1px solid red;
-  width: 80%;
+  width: 100%;
   height: 350px;
   grid-area: popular;
+  font-size: 30px;
 }
 
 #account-overview {
   border: 1px solid red;
-  width: 70%;
+  width: 100%;
   height: 350px;
   grid-area: overview;
+  justify-self: end;
+  font-size: 30px;
 }
 
 #newsletter {
   border: 1px solid red;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   grid-area: newsletter;
+  font-size: 30px;
 }
 
 /* /Home -------------------------------*/
@@ -112,14 +118,33 @@
   justify-items: center;
 }
 
+a {
+  padding: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#search-input {
+  padding: 0 0 0 0;
+  width: 250px;
+  height: 30px;
+}
+
+#search-button {
+  height: 34px;
+  width: 75px;
+}
+
 /* NavBar ---------------------------- */
 
 /* Footer ---------------------------- */
 
 #footer {
+  text-align: center;
   border: 1px solid green;
   width: 100vw;
   height: 150px;
+  font-size: 30px;
 }
 
 /* Footer ---------------------------- */

@@ -13,13 +13,14 @@ const SearchResults = () => {
 			<div id="nav-search">
 				<form className="search-form">
 					<input
+						id="search-input"
 						type="text"
 						className="searchTerm"
-						placeholder="Search by title..."
+						placeholder=" Search by title..."
 						value={searchTerms}
 						onChange={handleSearchInput}
-						/> 
-					<button type="submit">Search</button>
+						/>&nbsp;&nbsp;
+					<button id="search-button" type="submit">Search</button>
 				</form>
             </div>
             <div id="nav-buttons">
