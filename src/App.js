@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import SearchResults from "./components/SearchResults";
 import MediaDetails from "./components/MediaDetails";
 import NavBar from "./components/NavBar";
+import Footer from	"./components/Footer"
+import "./App.css"
 
 const App = () => {
 	return (
