@@ -13,6 +13,7 @@ const App = () => {
 				<Route path="/search" element={<SearchResults />} />
 				<Route path="/details" element={<MediaDetails />} />
 			</Routes>
+			<Footer />
 		</>
 	);
 };
