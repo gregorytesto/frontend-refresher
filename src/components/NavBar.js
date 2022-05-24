@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
-import { useState } from "react"
+import { useState } from "react";
+import logo from "../logos/logo-hort.png";
 
 const SearchResults = () => {
-	const [searchTerms, setSearchTerms] = useState("")
+	const [searchTerms, setSearchTerms] = useState("");
 
 	const handleSearchInput = (evt) => {
-        setSearchTerms(evt.target.value)
-    }
+		setSearchTerms(evt.target.value);
+	};
 
-	return(
-        <div id="navbar">
+	return (
+		<div id="navbar">
 			<div id="nav-search">
 				<form className="search-form">
 					<input
@@ -19,18 +20,24 @@ const SearchResults = () => {
 						placeholder=" Search by title..."
 						value={searchTerms}
 						onChange={handleSearchInput}
-						/>&nbsp;&nbsp;
-					<button id="search-button" type="submit">Search</button>
+					/>
+					&nbsp;&nbsp;
+					<button id="search-button" type="submit">
+						Search
+					</button>
 				</form>
-            </div>
-            <div id="nav-buttons">
-                <Link to="/">WePick</Link>&nbsp;&nbsp;
-                <Link to="/login">Login</Link>&nbsp;&nbsp;
-                <Link to="/signup">Sign Up</Link>&nbsp;&nbsp;
-                <Link to="/account">My Account</Link>
-            </div>
-        </div>
-    )
+			</div>
+
+			<div id="nav-buttons">
+				<Link to="/">
+					<img src={logo} width="125px"></img>
+				</Link>
+				<Link to="/login">LOGIN</Link>&nbsp;&nbsp;
+				<Link to="/signup">SIGN UP</Link>&nbsp;&nbsp;
+				<Link to="/account">MY ACCOUNT</Link>
+			</div>
+		</div>
+	);
 };
 
 export default SearchResults;

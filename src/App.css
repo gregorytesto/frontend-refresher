@@ -39,6 +39,11 @@
 
 /* Home --------------------------------*/
 
+body{
+  background-color: #F0F3F5;
+
+}
+
 #main-content {
   /* border: 1px solid red; */
   text-align: center;
@@ -48,8 +53,7 @@
   display: grid;
   grid-template-areas: 
   "popular overview"
-  "newsletter newsletter"
-  ;
+  "newsletter newsletter";
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto;
   gap: 30px;
@@ -58,7 +62,7 @@
 #hero-image {
   /* border: 1px solid red; */
   background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701223614.jpg") no-repeat center;
-  height: 500px;
+  height: 400px;
   background-size: cover;
   /* opacity: .6; */
 }
@@ -74,24 +78,30 @@
 }
 
 #popular-scroll { 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 350px;
   grid-area: popular;
   font-size: 30px;
+
+  background-image: url(https://www.previewsworld.com/SiteImage/MainImage/STL155177.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
 }
 
 #account-overview {
-  border: 1px solid red;
-  width: 100%;
-  height: 350px;
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  /* height: 350px; */
   grid-area: overview;
   justify-self: end;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #newsletter {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 200px;
   grid-area: newsletter;
@@ -116,6 +126,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  background-color: #1D1D1D;
+}
+
+#nav-buttons a {
+  color: #afafaf;
+  transition: .66s;
+}
+#nav-buttons a:hover{
+    color: black;
+    background-color: #afafaf;
+}
+#nav-buttons {
+line-height: 35px;
+    display: flex;
 }
 
 a {
@@ -140,11 +164,13 @@ a {
 /* Footer ---------------------------- */
 
 #footer {
+  color: white;
   text-align: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100vw;
   height: 150px;
   font-size: 30px;
+  background-color: #1D1D1D;
 }
 
 /* Footer ---------------------------- */
